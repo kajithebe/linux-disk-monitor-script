@@ -2,7 +2,7 @@
 
 # ---------- CONFIGURATION -----------------------------------
 THRESHOLD=80
-LOG_FILE="/var/log/disk_monitor_$(date '+%Y-%m-%d_%H-%M-%S').log"
+LOG_FILE="disk_monitor_$(date '+%Y-%m-%d_%H-%M-%S').log"
 # ------------------------------------------------------------
 
 

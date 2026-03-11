@@ -12,7 +12,7 @@ A Bash shell script that monitors disk usage on a Linux system and automatically
 - Checks the current disk usage of the root filesystem (`/`)
 - Compares it against a configurable threshold (default: **80%**)
 - If usage exceeds the threshold, it automatically deletes temporary files in `/tmp`
-- Logs all activity with timestamps to a unique log file per run at `/var/log/disk_monitor_<timestamp>.log`
+- Logs all activity with timestamps to a unique log file per run at `disk_monitor_<timestamp>.log` (saved in the directory where the script is run)
 
 ---
 
@@ -83,10 +83,10 @@ When disk usage exceeds the threshold:
 Each run creates a separate log file named with the timestamp of that run:
 
 ```
-/var/log/disk_monitor_2026-03-10_09-55-36.log
+disk_monitor_2026-03-10_09-55-36.log
 ```
 
-This means every run is recorded independently — old logs are never overwritten.
+This means every run is recorded independently — old logs are never overwritten. The log file is saved in the same directory where the script is run.
 
 ---
 
